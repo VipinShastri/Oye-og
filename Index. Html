@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Vipin Shastri | Data &amp; MIS Professional</title>
+<meta name="description" content="Data & MIS professional skilled in Advanced Excel, SQL and Power BI, specializing in operational reporting and workflow automation.">
+<meta name="theme-color" content="#0c111b">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;800&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add('js')</script>
+<style>
+:root{--bg:#0c111b;--pan:#131a28;--line:#243049;--tx:#e8ecf4;--mu:#8f9bb3;--ac:#ffd23f}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{background:var(--bg);color:var(--tx);font:400 1rem/1.65 'Bricolage Grotesque',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0;z-index:-1;background:linear-gradient(rgba(143,155,179,.07) 1px,transparent 1px) 0 0/96px 34px,linear-gradient(90deg,rgba(143,155,179,.07) 1px,transparent 1px) 0 0/96px 34px}
+a{color:inherit}
+a:focus-visible,.btn:focus-visible{outline:2px solid var(--ac);outline-offset:3px}
+.wrap{max-width:1060px;margin:0 auto;padding:0 22px}
+section{padding:90px 0}
+h1{font-size:clamp(3.6rem,14vw,8rem);line-height:.9;letter-spacing:-.045em;font-weight:800}
+h2{font-size:clamp(1.9rem,5vw,2.8rem);letter-spacing:-.03em;font-weight:800;margin-bottom:30px}
+h3{font-size:1.15rem;font-weight:600}
+.top{position:fixed;inset:0 0 auto;z-index:9;display:flex;align-items:center;gap:18px;padding:10px 22px;background:rgba(12,17,27,.85);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.logo{font-weight:800;font-size:1.2rem;text-decoration:none}
+.logo span{color:var(--ac)}
+.fx{display:flex;flex:1;max-width:330px;min-width:0;border:1px solid var(--line);border-radius:4px;font:.78rem ui-monospace,Menlo,Consolas,monospace}
+.fx i{padding:3px 10px;color:var(--ac);border-right:1px solid var(--line)}
+.fx code{padding:3px 10px;color:var(--mu);white-space:nowrap;overflow:hidden}
+.top nav{margin-left:auto;display:flex;gap:20px;overflow-x:auto}
+.top nav a{color:var(--mu);text-decoration:none;font-size:.92rem;white-space:nowrap}
+.top nav a:hover{color:var(--ac)}
+.hero{min-height:100svh;display:grid;grid-template-columns:1.2fr .8fr;gap:44px;align-items:center;padding-top:110px;padding-bottom:50px}
+.cell{display:inline-block;position:relative;margin-top:26px;padding:6px 16px;border:2px solid var(--ac);font-weight:600;font-size:1.15rem}
+.cell::after{content:"";position:absolute;right:-6px;bottom:-6px;width:9px;height:9px;background:var(--ac);border:1px solid var(--bg)}
+.lead{color:var(--mu);font-size:1.15rem;max-width:33em;margin:28px 0 30px}
+.btn{display:inline-block;padding:12px 22px;border-radius:4px;background:var(--ac);color:#0c111b;font-weight:600;text-decoration:none;margin:0 10px 10px 0}
+.btn.ghost{background:none;color:var(--tx);border:1px solid var(--line)}
+.btn.ghost:hover{border-color:var(--ac);color:var(--ac)}
+.sheet{background:var(--pan);border:1px solid var(--line);border-radius:6px;overflow:hidden}
+.sheet .r{display:grid;grid-template-columns:82px 1fr;gap:12px;align-items:center;padding:13px 16px;border-top:1px solid var(--line);font-size:.92rem}
+.sheet .sh{background:#1b2438;color:var(--mu);font-weight:600;border-top:0}
+.sheet b{height:14px;width:0;background:var(--ac);transition:width 1.3s cubic-bezier(.2,.8,.2,1)}
+.sheet.on b{width:var(--w)}
+.sheet small{display:block;padding:10px 16px;color:var(--mu);font-size:.8rem;border-top:1px solid var(--line)}
+.two{display:grid;grid-template-columns:1.3fr 1fr;gap:38px;align-items:start}
+.two p{font-size:1.15rem}
+.ticks{list-style:none;display:grid;gap:12px}
+.ticks li{padding-left:26px;position:relative}
+.ticks li::before{content:"✓";position:absolute;left:0;color:var(--ac);font-weight:800}
+.path{display:grid;grid-template-columns:1fr auto 1fr;gap:16px;align-items:center;margin-top:46px}
+.path div:not(.arr){background:var(--pan);border:1px solid var(--line);border-radius:6px;padding:20px}
+.path b{display:block;font-size:1.2rem;color:var(--ac)}
+.path span{color:var(--mu);font-size:.95rem}
+.arr{font-size:1.6rem;color:var(--ac)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:16px}
+.card{background:var(--pan);border:1px solid var(--line);border-radius:6px;padding:22px}
+.card:nth-child(3n+2){border-radius:14px}
+.card h3{margin-bottom:8px}
+.card p{font-size:.92rem;color:var(--mu);margin-top:10px}
+.card p em,.roles h3+ul{font-style:normal}
+.card p em{display:block;font-weight:600;font-size:.82rem;color:var(--ac)}
+.card p.adv{color:var(--tx)}
+.roles{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px}
+.roles ul{list-style:none;display:grid;gap:9px;margin-top:14px;font-size:.93rem;color:var(--mu)}
+.roles li{padding-left:16px;position:relative}
+.roles li::before{content:"";position:absolute;left:0;top:.7em;width:6px;height:2px;background:var(--ac)}
+.proj{display:grid;gap:12px;margin-bottom:16px}
+.proj .hd{display:flex;flex-wrap:wrap;align-items:center;gap:12px}
+.proj h3{font-size:1.4rem;font-weight:800;letter-spacing:-.02em}
+.f{font-size:.8rem;font-weight:600;color:#0c111b;background:var(--ac);padding:1px 10px;border-radius:99px}
+.proj .ob{color:var(--tx);font-size:1rem;margin:0}
+.proj ul{list-style:none;display:grid;gap:7px;color:var(--mu);font-size:.93rem}
+.proj li{padding-left:20px;position:relative}
+.proj li::before{content:"›";position:absolute;left:0;color:var(--ac);font-weight:800}
+.tl{display:flex;flex-wrap:wrap;gap:8px}
+.tl span{font-size:.8rem;padding:3px 12px;border:1px solid var(--line);border-radius:99px;color:var(--mu)}
+.links a{font-size:.88rem;margin-right:18px;text-decoration:none;border-bottom:1px solid var(--ac)}
+.links a:hover,.host a:hover{color:var(--ac)}
+.host{color:var(--mu);margin-top:26px}
+.host a{color:var(--tx);border-bottom:1px solid var(--ac);text-decoration:none}
+.contact{text-align:center}
+.contact h2{font-size:clamp(2.2rem,8vw,4.6rem);line-height:1}
+.contact p{color:var(--mu);margin-bottom:26px}
+.mail{display:block;font-size:clamp(1.1rem,4.5vw,1.9rem);font-weight:600;margin-bottom:26px;text-decoration:none;color:var(--ac);word-break:break-all}
+footer{padding:26px 22px;text-align:center;color:var(--mu);font-size:.85rem;border-top:1px solid var(--line)}
+.js .rv{opacity:0;transform:translateY(18px);transition:opacity .8s,transform .8s cubic-bezier(.2,.8,.2,1)}
+.js .rv.in{opacity:1;transform:none}
+@media(max-width:820px){.hero{grid-template-columns:1fr;min-height:auto;padding-top:120px}.fx{display:none}}
+@media(max-width:720px){.two,.path,.roles{grid-template-columns:1fr}.arr{transform:rotate(90deg);justify-self:center}section{padding:64px 0}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}.js .rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<header class="top">
+<a class="logo" href="#home">VS<span>.</span></a>
+<div class="fx" aria-hidden="true"><i>fx</i><code id="fx">=GOTO("home")</code></div>
+<nav><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a></nav>
+</header>
+
+<main>
+<section id="home" class="wrap hero">
+<div>
+<h1>Vipin<br>Shastri</h1>
+<div class="cell">Data &amp; MIS Professional</div>
+<p class="lead">I turn complex raw datasets into KPI dashboards and reports that management can act on, using Excel, SQL and Power BI, and I automate anything that repeats.</p>
+<a class="btn" href="#projects">See my projects</a><a class="btn ghost" href="#contact">Contact me</a>
+</div>
+<div class="sheet" id="sheet" aria-hidden="true">
+<div class="r sh"><span>Region</span><span>Sales</span></div>
+<div class="r"><span>North</span><b style="--w:86%"></b></div>
+<div class="r"><span>South</span><b style="--w:64%;transition-delay:.15s"></b></div>
+<div class="r"><span>East</span><b style="--w:92%;transition-delay:.3s"></b></div>
+<div class="r"><span>West</span><b style="--w:48%;transition-delay:.45s"></b></div>
+<div class="r"><span>Central</span><b style="--w:71%;transition-delay:.6s"></b></div>
+<small>Sample DSR layout with data bars</small>
+</div>
+</section>
+
+<section id="about" class="wrap">
+<h2 class="rv">About me</h2>
+<div class="two rv">
+<p>Data &amp; MIS professional skilled in Advanced Excel, SQL and Power BI, specializing in operational reporting and workflow automation. I transform complex raw datasets into interactive KPI dashboards and actionable business insights.</p>
+<ul class="ticks"><li>Eliminate manual reporting redundancies</li><li>Audit data hygiene and standardize sources</li><li>Support data-driven management decisions</li></ul>
+</div>
+<div class="path rv">
+<div><b>What happened?</b><span>Operational tracking and accurate data consolidation</span></div>
+<div class="arr">→</div>
+<div><b>Why did it happen, and what next?</b><span>Diagnostic, predictive and strategic decision support</span></div>
+</div>
+</section>
+
+<section id="skills" class="wrap">
+<h2 class="rv">Skills</h2>
+<div class="grid rv" id="sk"></div>
+<div class="roles rv">
+<div class="card"><h3>MIS Executive track</h3><ul>
+<li>Advanced MS Excel &amp; Google Sheets (XLOOKUP, INDEX-MATCH, SUMIFS, Pivot Tables)</li>
+<li>VBA &amp; Excel Macros for report generation automation</li>
+<li>Intermediate SQL: queries, filtering, aggregations, joins</li>
+<li>ERP &amp; CRM navigation (SAP, Tally, Salesforce, Zoho)</li>
+<li>Data cleaning, reconciliation &amp; standardization</li>
+<li>Operational reporting: DSR, WSR, MSR</li>
+<li>Basic Power BI &amp; dashboard maintenance</li></ul></div>
+<div class="card"><h3>Data Analyst track</h3><ul>
+<li>Advanced SQL: CTEs, window functions, complex joins, query optimization</li>
+<li>Power BI / Tableau / Looker with DAX &amp; data modeling</li>
+<li>Python / R with Pandas, NumPy, Matplotlib, Seaborn</li>
+<li>Statistical analysis: hypothesis testing, regression, cohort analysis</li>
+<li>Exploratory data analysis &amp; data cleansing</li>
+<li>Data warehousing: BigQuery, Snowflake, star and snowflake schemas</li>
+<li>Business acumen, data storytelling &amp; executive presentations</li></ul></div>
+</div>
+</section>
+
+<section id="projects" class="wrap">
+<h2 class="rv">Projects</h2>
+<div id="pj"></div>
+<p class="host rv">Power BI dashboards are showcased on <a href="https://www.novypro.com" target="_blank" rel="noopener">NovyPro</a>. SQL queries, Python scripts and documentation live on <a href="https://github.com/VipinShastri" target="_blank" rel="noopener">GitHub</a>.</p>
+</section>
+
+<section id="contact" class="wrap contact">
+<h2 class="rv">Have data that needs to make sense?</h2>
+<div class="rv">
+<p>Reporting, dashboards, automation. Send me a note.</p>
+<a class="mail" href="mailto:ogvipinshastri@gmail.com">ogvipinshastri@gmail.com</a>
+<a class="btn" href="https://github.com/VipinShastri" target="_blank" rel="noopener">GitHub</a><a class="btn ghost" href="https://www.linkedin.com/in/vipin-shastri" target="_blank" rel="noopener">LinkedIn</a>
+</div>
+</section>
+</main>
+<footer>© <span id="yr"></span> Vipin Shastri</footer>
+
+<script>
+const $=s=>document.querySelector(s);
+const S=[
+["Spreadsheets","Excel / Sheets: XLOOKUP, INDEX-MATCH, SUMIFS, Pivot Tables, Data Validation, formatting","Power Pivot, data modeling, quick ad-hoc data audits"],
+["Database & SQL","SELECT, WHERE, GROUP BY, INNER / LEFT JOIN","Window functions, CTEs, subqueries, stored procedures, optimization"],
+["Automation & Scripting","VBA / Excel macros for daily report automation","Python / R: automated data pipelines, ETL scripts, API integrations"],
+["BI & Visualization","Power BI / Tableau: refreshing reports, card and chart updates","Complex DAX, data modeling, interactive KPI dashboards, Looker"],
+["Analytics & Math","Totals, averages, MoM / YoY growth tracking","Inferential statistics, hypothesis testing, trend analysis, regression, forecasting"],
+["Source Systems","ERP / CRM: SAP, Tally, Salesforce, Zoho, internal CRM","Snowflake, BigQuery, Redshift, SQL databases, APIs"],
+["Primary Deliverables","DSR, WSR, MSR status reports and operations trackers","Business insight decks, root-cause analysis, churn / retention models, strategic recommendations"]
+];
+const P=[
+{t:"Automated Sales & Operations Tracker",f:"MIS",k:["Advanced Excel","VBA / Macros"],
+o:"Automate the manual reporting work behind daily sales and inventory tracking.",
+d:["VBA macro that cleans and validates raw data automatically","Dynamic DSR (Daily Sales Report) tracker using XLOOKUP, SUMIFS and Pivot Tables","One-click PDF report export button for management"],
+l:[["Dataset: Superstore Sales (Kaggle)","https://www.kaggle.com/datasets/vivek468/superstore-dataset-final"],["Guide: Excel VBA getting started (Microsoft)","https://learn.microsoft.com/en-us/office/vba/library-reference/concepts/getting-started-with-vba-in-office"]]},
+{t:"Retail Business Performance & KPI Dashboard",f:"BI",k:["SQL","Power BI","DAX"],
+o:"Visualize cross-category sales, profit margins and regional performance.",
+d:["SQL queries (joins, aggregations) to extract sales, customer and product data from a relational database","DAX measures for MoM sales growth, top 10 profitable products and returns rate","Executive-level interactive dashboard with slicers for region, date range and product category"],
+l:[["Database: AdventureWorks samples (Microsoft)","https://learn.microsoft.com/en-us/sql/samples/adventureworks-install-configure"],["Data: Power BI sample datasets (Microsoft)","https://learn.microsoft.com/en-us/power-bi/create-reports/sample-datasets"]]},
+{t:"Customer Churn & Retention Analysis",f:"Analytics",k:["SQL / Python","Pandas","Power BI / Excel"],
+o:"Identify the behavior patterns of repeat customers and customers at risk of churning.",
+d:["RFM (Recency, Frequency, Monetary) analysis to divide customers into segments","Churn rate and retention trends using SQL window functions or Python (Pandas)","Recommendations deck for management: retention strategy for high-value customers to reduce churn"],
+l:[["Dataset: Telco Customer Churn, IBM (Kaggle)","https://www.kaggle.com/datasets/blastchar/telco-customer-churn"]]}
+];
+$('#sk').innerHTML=S.map(([t,c,a])=>`<div class="card"><h3>${t}</h3><p><em>Core</em>${c}</p><p class="adv"><em>Advanced</em>${a}</p></div>`).join('');
+$('#pj').innerHTML=P.map(p=>`<article class="card proj rv"><div class="hd"><h3>${p.t}</h3><span class="f">${p.f}</span></div><p class="ob">${p.o}</p><ul>${p.d.map(x=>`<li>${x}</li>`).join('')}</ul><div class="tl">${p.k.map(x=>`<span>${x}</span>`).join('')}</div><div class="links">${p.l.map(([a,b])=>`<a href="${b}" target="_blank" rel="noopener">${a}</a>`).join('')}</div></article>`).join('');
+$('#yr').textContent=new Date().getFullYear();
+const io=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}}),{threshold:.12});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+const fx=$('#fx');
+const so=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting)fx.textContent='=GOTO("'+x.target.id+'")'}),{rootMargin:'-45% 0px -50% 0px'});
+document.querySelectorAll('section[id]').forEach(s=>so.observe(s));
+setTimeout(()=>$('#sheet').classList.add('on'),300);
+</script>
+</body>
+</html>
